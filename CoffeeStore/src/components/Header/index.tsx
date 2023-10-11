@@ -1,15 +1,17 @@
 import { ButtonGroup, HeaderContainer, InnerContainer } from "./styles";
 import coffeeLogo from "../../assets/images/logo.svg";
 import { Button } from "../Button";
-import { ShoppingCart } from "@phosphor-icons/react";
+import { MapPin, ShoppingCart } from "@phosphor-icons/react";
 export function Header() {
   return (
     <HeaderContainer>
       <InnerContainer>
         <img src={coffeeLogo} alt="" />
         <ButtonGroup>
-          <Button>Porto Alegre, RS</Button>
-          <Button>
+          <Button variant="location">
+            <MapPin /> Porto Alegre, RS
+          </Button>
+          <Button variant="icon">
             <ShoppingCart weight="fill" size={22} />
           </Button>
         </ButtonGroup>

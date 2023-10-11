@@ -1,7 +1,8 @@
+import { ReactNode } from "react";
 import { ButtonContainer, ButtonVariant } from "./styles";
 
 interface ButtonProps {
-  children: string;
+  children: ReactNode | string;
   variant?: ButtonVariant;
 }
 
